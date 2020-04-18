@@ -8,6 +8,8 @@ Para obtener data desde un servicio o api externa (como nuestro backend backend)
 
 A este no hace importarlo porque se encuentra dentro del objeto global.
 
+> La función `fecth` retorna una [Promesa](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Usar_promesas)
+
 uso:
 
 ```js
