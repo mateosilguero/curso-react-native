@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import Home from './src/views/Home';
+import Detail from './src/views/Detail';
 
 const Stack = createStackNavigator();
 
@@ -13,14 +14,13 @@ const App = () => {
       <StatusBar barStyle="light-content" backgroundColor="#ff0000" />
       <Stack.Navigator
         screenOptions={{
-          title: 'Pokedex',
           headerStyle: {
             backgroundColor: '#f4511e',
           },
           headerTintColor: 'white',
         }}>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Home2" component={Home} />
+        <Stack.Screen name="Pokedex" component={Home} />
+        <Stack.Screen name="Pokemon" component={Detail} />
       </Stack.Navigator>
     </NavigationContainer>
   );
